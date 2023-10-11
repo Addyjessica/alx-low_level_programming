@@ -23,7 +23,7 @@ int _strlen(char *s)
 
 /**
  * *_strcpy - copies the string pointed to by src
- * @dest: pointer to the buffer 
+ * @dest: pointer to the buffer
  * @src: string to be copied
  *
  * Return: the pointer to dest
