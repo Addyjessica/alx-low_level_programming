@@ -20,7 +20,7 @@ size_t looped_listint_len(const listint_t *head)
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	elehant = head->next;
+	elephant = head->next;
 	duck = (head->next)->next;
 
 	while (duck)
