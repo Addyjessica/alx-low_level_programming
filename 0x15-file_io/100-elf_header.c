@@ -50,11 +50,11 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-	int pos = 0;
+	int pos;
 
 	printf("  Magic:   ");
 
-	for (pos; pos < EI_NIDENT; pos++)
+	for (pos = 0; pos < EI_NIDENT; pos++)
 	{
 		printf("%02x", e_ident[pos]);
 
