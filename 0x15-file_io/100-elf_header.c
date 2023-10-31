@@ -1,7 +1,4 @@
-/*
- * File: 100-elf_header.c
- * Auth: Jessica Addy
- */
+
 
 #include <elf.h>
 #include <sys/types.h>
@@ -53,13 +50,13 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-	int pos;
+	int pos = 0;
 
 	printf("  Magic:   ");
 
-	for (pos = 0; pos < EI_NIDENT; pos++)
+	for (pos; pos < EI_NIDENT; pos++)
 	{
-		printf("%02x", e_ident[index]);
+		printf("%02x", e_ident[pos]);
 
 		if (pos == EI_NIDENT - 1)
 			printf("\n");
